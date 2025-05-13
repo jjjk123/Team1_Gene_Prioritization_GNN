@@ -49,7 +49,7 @@ Case/control variants statistics: https://azphewas.com/phenotypeView/6319c068-fd
 
 Why clone it? How to use it? Why and how build upon it?
 
-Draft: to apply the methods we validated to work, to furher rare diseases. To expand this project into a more comprehensive benchmarking of available methods.
+Draft: to apply the methods we validated as working, to research further rare diseases in a similar fashion. To expand this project into a more comprehensive benchmarking of available methods.
 
 ## References
 
