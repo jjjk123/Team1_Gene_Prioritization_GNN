@@ -1,6 +1,6 @@
 > BioAI Hackathon at the University of Warsaw (May 12-15, 2025)
 
-# PDAGUGNN (Prioritizing disease-associated genes using graph neural networks)
+# D-GRIP: Disease-Gene Ranking via Inference and Propagation
 
 ## Aim
 
