@@ -4,6 +4,7 @@
     <td>
       <p><em>BioAI Hackathon at the University of Warsaw (May 12–15, 2025)</em></p>
       <h1>D-GRIP: Disease-Gene Ranking via Inference and Propagation</h1>
+      <h1>GRAIL: Gene Ranking for Ataxia using Interactome-based Learning</h1>
     </td>
   </tr>
 </table>
