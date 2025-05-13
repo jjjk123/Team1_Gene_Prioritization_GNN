@@ -2,6 +2,10 @@
 
 # D-GRIP: Disease-Gene Ranking via Inference and Propagation
 
+![Logo](https://github.com/SFGLab/Team1_Gene_Prioritization_GNN/blob/7859e3105290c2c5733b58ca13d16c30292abee2/raw.png)
+
+
+
 ## Aim
 
 Why???
