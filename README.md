@@ -4,6 +4,8 @@
 
 ## Aim
 
+Why???
+
 ## Contributors
 
 - Jędrzej Kubica
