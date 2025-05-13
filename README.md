@@ -14,7 +14,11 @@
 
 ## Aim
 
-Why???
+To identify new genes potentially involved in Hereditary Ataxia by applying graph-based machine learning methods to biological networks. We compare Network Propagation with state-of-the-art Graph Neural Networks (GNNs), using protein-protein interaction data and known disease genes. We aim to assess and compare how well these methods can prioritize candidate genes for further biological validation.
+
+## Why?
+
+Hereditary Ataxia is a genetically complex disease, with many cases still unexplained despite genome-wide studies. Network-based methods can highlight functionally related genes that don't stand out in standard analyses. Graph Neural Networks may offer improved performance by learning from complex network patterns, but are more complex to set up and computatinally demanding. Our project explores the potential and limitations of these models.
 
 ## Contributors
 
