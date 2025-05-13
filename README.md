@@ -12,6 +12,7 @@
 - Abolhassan Bahari
 - Rahaf Ahmad
 - Sreeram Peela
+- Mikolaj Kocikowski
 - Paulina Domek
 
 ## Methods
