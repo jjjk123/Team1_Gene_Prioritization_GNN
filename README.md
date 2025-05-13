@@ -31,7 +31,9 @@ Case/control variants statistics: https://azphewas.com/phenotypeView/6319c068-fd
 
 ## Conclusions
 
-## How to use this repo?
+## How to use this repo
+
+Why clone it? How to use it? Why and how build upon it?
 
 ## References
 
