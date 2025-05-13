@@ -49,6 +49,8 @@ Case/control variants statistics: https://azphewas.com/phenotypeView/6319c068-fd
 
 Why clone it? How to use it? Why and how build upon it?
 
+Draft: to apply the methods we validated to work, to furher rare diseases. To expand this project into a more comprehensive benchmarking of available methods.
+
 ## References
 
 1) Altabaa, A., Huang, D., Byles-Ho, C., Khatib, H., Sosa, F., & Hu, T. (2022). GeneDRAGNN: Gene disease prioritization using graph neural networks. 2022 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB), 1–10. https://doi.org/10.1109/cibcb55180.2022.9863043
