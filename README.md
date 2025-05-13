@@ -18,7 +18,7 @@ To identify new genes potentially involved in Hereditary Ataxia by applying grap
 
 ## Why?
 
-Hereditary Ataxia is a genetically complex disease, with many cases still unexplained despite genome-wide studies. Network-based methods can highlight functionally related genes that don't stand out in standard analyses. Graph Neural Networks may offer improved performance by learning from complex network patterns, but are more complex to set up and computatinally demanding. Our project explores the potential and limitations of these models.
+Hereditary Ataxia is a rare, genetically complex disease, with many cases still unexplained despite genome-wide studies. Network-based methods can highlight functionally related genes that don't stand out in standard analyses. Compared to Network Propagation, GNNs may offer less bias and improved performance in recognizing complex patterns, but are more computationally demanding and dependent on more advanced configuration. Our project explores the potential and limitations of these two types of models.
 
 ## Contributors
 
