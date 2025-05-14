@@ -42,6 +42,45 @@ Case/control variants statistics: https://azphewas.com/phenotypeView/6319c068-fd
 
 ![Flowchart](https://github.com/SFGLab/Team1_Gene_Prioritization_GNN/blob/main/GNN%20for%20GD%20proiritization.drawio%20(4).png?raw=true)
 
+###Pipeline testing 
+README
+
+
+geneDRAGNN testing pipeline
+
+This project demonstrates how to use the pretrained model from the geneDRAGNN repository to generate disease relevance scores for genes using a Multi-Layer Perceptron (MLP) model trained on lung adenocarcinoma (LUAD) data.
+
+🔍 What This Does
+- Loads a pretrained MLP model: MLP_node_trial99.ckpt
+- Accepts node features of shape (N, 107)
+- Outputs predicted gene scores in gene_scores.csv
+
+🧪 Setup
+
+1. Clone the Repo
+git clone https://github.com/hanikhatib/geneDRAGNN.git
+cd geneDRAGNN
+
+2. Install Requirements (CPU)
+pip install torch torchvision torchaudio pandas numpy
+pip install torch-scatter -f https://data.pyg.org/whl/torch-2.1.0+cpu.html
+pip install torch-sparse -f https://data.pyg.org/whl/torch-2.1.0+cpu.html
+pip install torch-geometric
+
+3. Prepare Input Files
+Place gene_features_107.csv and gene_names.csv in the repo folder.
+
+4. Run Inference
+python3 run_gene_score_inference_final_v2.py
+
+✅ Output:
+gene_scores.csv with pathogenicity relevance scores.
+
+⚠️ Notes
+- The pretrained model is trained for Lung Adenocarcinoma (LUAD).
+- Using this model for other diseases will require retraining.
+
+
 ## Results
 
 ## Conclusions
