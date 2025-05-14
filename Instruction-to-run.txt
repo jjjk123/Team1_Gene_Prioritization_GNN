@@ -1,0 +1,85 @@
+📌 Objective:
+Generate gene-level disease scores using the pretrained MLP_node_trial99.ckpt model (lung adenocarcinoma) from the geneDRAGNN repository.
+
+🧪 Setup Steps 
+1. ✅ Clone the geneDRAGNN repo
+git clone https://github.com/hanikhatib/geneDRAGNN.git
+cd geneDRAGNN
+
+2. ✅ Install Dependencies (CPU version)
+pip install torch torchvision torchaudio pandas numpy
+pip install torch-scatter -f https://data.pyg.org/whl/torch-2.1.0+cpu.html
+pip install torch-sparse -f https://data.pyg.org/whl/torch-2.1.0+cpu.html
+pip install torch-geometric
+
+
+3. ✅ Prepare Dummy Input Data
+Create a file named gene_features_107.csv in the repo folder with 100 genes × 107 features.
+gene_names.csv
+gene_features_107.csv
+
+
+4. ✅ Run the Final Inference Script
+import torch
+import pandas as pd
+from torch_geometric.nn.models import MLP
+
+# Load dummy features and gene names
+features = pd.read_csv('gene_features_107.csv').values
+gene_names = pd.read_csv('gene_names.csv')['Gene'].tolist()
+
+# Define model architecture matching the checkpoint
+model = MLP(
+    in_channels=107,
+    hidden_channels=128,
+    out_channels=2,
+    num_layers=3,
+    dropout=0.0,
+    norm='batch_norm',
+    act='relu'
+)
+
+# Load and fix checkpoint keys
+checkpoint = torch.load('geneDRAGNN/models/model_checkpoints/MLP_node_trial99.ckpt',
+                        map_location=torch.device('cpu'), weights_only=False)
+
+state_dict = checkpoint['state_dict']
+cleaned_state_dict = {}
+for k, v in state_dict.items():
+    new_k = k.replace("model.", "")
+    if "norms" in new_k and ".module" not in new_k:
+        parts = new_k.split(".")
+        new_k = f"{parts[0]}.{parts[1]}.module.{parts[2]}"
+    cleaned_state_dict[new_k] = v
+
+model.load_state_dict(cleaned_state_dict)
+
+# Inference
+model.eval()
+with torch.no_grad():
+    inputs = torch.tensor(features, dtype=torch.float32)
+    outputs = model(inputs)
+    scores = outputs[:, 1].numpy()  # column 1 = pathogenicity score
+
+# Save output
+output_df = pd.DataFrame({
+    "Gene": gene_names,
+    "Score": scores
+})
+output_df.to_csv("gene_scores.csv", index=False)
+print("✅ Gene scores saved to gene_scores.csv")
+
+
+
+5. ✅ Save the scores
+Must look like this: 
+Gene,Score
+GENE_0,3.8586566
+GENE_1,5.0810375
+GENE_2,6.235772
+GENE_3,3.908842
+GENE_4,4.6326575
+GENE_5,9.981948
+GENE_6,2.9020495
+GENE_7,3.074488
+GENE_8,5.5202923
