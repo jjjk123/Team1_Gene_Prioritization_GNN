@@ -18,7 +18,11 @@ To identify new genes potentially involved in Hereditary Ataxia by applying grap
 
 ## Why?
 
-Hereditary Ataxia is a rare, genetically complex disease, with many cases still unexplained despite genome-wide studies. Network-based methods can highlight functionally related genes that don't stand out in standard analyses. Compared to Network Propagation, GNNs may offer less bias and improved performance in recognizing complex patterns, but are dependent on advanced configuration and more computationally demanding. Our project explores the potential and limitations of these two types of models.
+Medical genetics aims at identiying new genomic variants for diseases. While next generation sequencing provide milions of genomic variants in patients, it is challenging to assess which of them are causal for the disease. Since experimental studies are usually quite expensive and time-consuming, in silico disease-gene prioritization is very useful in the discovery of new genes. By ranking genes, the methods provide sets of the most promising new candidate genes for diseases.
+
+Currently, novel bioinformatics methods, such as graph neural networks are increasingly popular. The huge number of novel bioinformatics methods requires further understanding of how these methods work and how they compare to previous methods. In particular, it is of crucial importance for bioinformatitians to provide only high-confidence candidates for further experimental validation, Therefore, during the hackathon we aimed at comparing the performance of graph neural networks with network propagation methods.
+
+We used hereditary ataxia - a rare, genetically complex disease, with many cases still unexplained despite genome-wide studies. Network-based methods can highlight functionally related genes that don't stand out in standard analyses. Compared to Network Propagation, GNNs may offer less bias and improved performance in recognizing complex patterns, but are dependent on advanced configuration and more computationally demanding. Our project explores the potential and limitations of these two types of models.
 
 ## Contributors
 
@@ -33,9 +37,15 @@ Hereditary Ataxia is a rare, genetically complex disease, with many cases still 
 
 ## Methods
 
-Main tools to base our work on: https://github.com/geneDRAGNN/geneDRAGNN and https://github.com/GiDeCarlo/XGDAG 
+Main tools to base our work on: 
+- https://github.com/geneDRAGNN/geneDRAGNN
+- https://github.com/GiDeCarlo/XGDAG
+- https://github.com/anthbapt/multixrank
 
-Case/control variants statistics: https://azphewas.com/phenotypeView/6319c068-fd59-46d8-85ee-82d82482eb14/VW5pb24jRzExI0hlcmVkaXRhcnkgYXRheGlh/glr
+Graph neural networks require as input:
+- biological network (protein-protein interaction constructed with BioGRID and Reactome)
+- a list of known disease genes (i.e, ataxia)
+- node features: we used gene expression in cerebellum (from the GTEx database) and case/control variants statistics: https://azphewas.com/phenotypeView/6319c068-fd59-46d8-85ee-82d82482eb14/VW5pb24jRzExI0hlcmVkaXRhcnkgYXRheGlh/glr
 
 ### Workflow
 
@@ -43,7 +53,6 @@ Case/control variants statistics: https://azphewas.com/phenotypeView/6319c068-fd
 
 ### Pipeline testing 
 README
-
 
 geneDRAGNN testing pipeline
 
