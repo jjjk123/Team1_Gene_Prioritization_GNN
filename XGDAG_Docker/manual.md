@@ -6,7 +6,7 @@ A) Dockerfile_quick_2025-05-14 - has the mods integrated for a quick deployment 
 B) Dockerfile - requires manual changes to the XGDAG code as accessed on 2025-05-14, detailed in the manual below.
 
 
-### A - Instructions for Dockerfile_quick_2025-05-11
+### A - Instructions for Dockerfile_quick_2025-05-14
 
 1. Download the XGDAG repository and prepare the Dockerfile
 ```bash
