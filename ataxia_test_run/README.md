@@ -1,7 +1,7 @@
 
 ---
 
-## 🧾 report_summary.txt (Sample content)
+## 🧾 Report summary
 
 ```txt
 # Ataxia Gene Testing Summary – geneDRAGNN
