@@ -5,7 +5,6 @@
 mkdir test
 cd test
 git clone https://github.com/GiDeCarlo/XGDAG
-cd XGDAG
 nano Dockerfile
 ```
 Paste the provided Dockerfile content and save the file.
