@@ -23,7 +23,7 @@ docker build -t xgdag_test .
 docker run -it xgdag_test
 ```
 
-**3. Test if it works**
+3. Test if it works
 ```bash
 python TrainerScript.py
 ```
