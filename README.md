@@ -3,7 +3,6 @@
     <td><img src="https://github.com/SFGLab/Team1_Gene_Prioritization_GNN/blob/7859e3105290c2c5733b58ca13d16c30292abee2/raw.png" alt="Logo" width="150"/></td>
     <td>
       <p><em>BioAI Hackathon at the University of Warsaw (May 12–15, 2025)</em></p>
-      <h1>D-GRIP: Disease-Gene Ranking via Inference and Propagation</h1>
       <h1>GRAIL: Gene Ranking for Ataxia using Interactome-based Learning</h1>
     </td>
   </tr>
