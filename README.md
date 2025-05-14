@@ -45,7 +45,7 @@ Main tools to base our work on:
 
 Graph neural networks require as input:
 - biological network (protein-protein interaction constructed with BioGRID and Reactome)
-- a list of known disease genes (i.e, ataxia)
+- a list of known disease genes for ataxia from https://www.genomicsengland.co.uk/
 - node features: we used gene expression in cerebellum (from the GTEx database) and case/control variants statistics: https://azphewas.com/phenotypeView/6319c068-fd59-46d8-85ee-82d82482eb14/VW5pb24jRzExI0hlcmVkaXRhcnkgYXRheGlh/glr
 
 ### Workflow
