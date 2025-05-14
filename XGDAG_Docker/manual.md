@@ -1,4 +1,4 @@
-### Run XGDAG using Docker
+## Run XGDAG using Docker
 
 ### Choose one of the paths
 
@@ -8,22 +8,25 @@ B) Dockerfile - requires manual changes to the XGDAG code as accessed on 2025-05
 
 ### A - Instructions for Dockerfile_quick_2025-05-14
 
-1. Download the XGDAG repository and prepare the Dockerfile
+1. Download the XGDAG repository
 ```bash
 mkdir test
 cd test
 git clone https://github.com/GiDeCarlo/XGDAG
+```
+
+2. Create 'Dockerfile' in the same dir and paste the contents from 'Dockerfile_quick_2025-05-14'
+```bash
 nano Dockerfile
 ```
-**Paste the contents of the 'Dockerfile_quick_2025-05-14' file provided here into your 'Dockerfile'.**
 
-2. Build and run the Docker image
+3. Build and run the Docker image
 ```bash
 docker build -t xgdag_test .
 docker run -it xgdag_test
 ```
 
-3. Test if it works
+4. Test if XGDAG works
 ```bash
 python TrainerScript.py
 ```
@@ -60,7 +63,7 @@ docker build -t xgdag_test .
 docker run -it xgdag_test
 ```
 
-5. Test if it works
+5. Test if XGDAG works
 ```bash
 python TrainerScript.py
 ```
