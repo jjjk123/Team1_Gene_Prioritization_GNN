@@ -15,7 +15,7 @@ cd test
 git clone https://github.com/GiDeCarlo/XGDAG
 ```
 
-2. Create 'Dockerfile' in the same dir and paste the contents from 'Dockerfile_quick_2025-05-14'
+2. Create 'Dockerfile' in the same dir and paste the contents from 'Dockerfile_quick_2025-05-14' and save
 ```bash
 nano Dockerfile
 ```
@@ -56,7 +56,7 @@ touch XGDAG/SubgraphX/__init__.py
 ```bash
 sed -i 's/from SubgraphXshapley/from .SubgraphXshapley/' XGDAG/SubgraphX/SubgraphX.py
 ```
-3. Create a docker file - paste the content of provided 'Dockerfile'
+3. Create a docker file - paste the content of provided 'Dockerfile' and save
 ```bash
 nano Dockerfile
 ```
