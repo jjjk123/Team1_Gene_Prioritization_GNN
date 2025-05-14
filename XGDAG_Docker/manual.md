@@ -77,3 +77,14 @@ docker run -it xgdag_test
 ```bash
 python TrainerScript.py
 ```
+
+## Further analysis
+
+The above may allow to replicate the analysis in the paper, but performing an analysis of another disease requires further, undocumented, steps.
+The script requires several input files, including a .gml interactome and .txt files with genes, scores and ranking, which appantly need to be generated with another tool - see here:
+https://github.com/GiDeCarlo/XGDAG/issues/1
+and
+https://github.com/AndMastro/NIAPU/?tab=readme-ov-file
+
+
+
