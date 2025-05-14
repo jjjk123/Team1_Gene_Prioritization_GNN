@@ -1,0 +1,36 @@
+Ataxia GeneDRAGNN Testing Workflow
+
+🔧 Environment Setup
+OS: Ubuntu via WSL
+Python version: 3.12 (Anaconda installed)
+Required packages:
+pip install pandas numpy scipy torch torchvision torchaudio
+pip install torch-scatter -f https://data.pyg.org/whl/torch-2.1.0+cpu.html
+pip install torch-sparse -f https://data.pyg.org/whl/torch-2.1.0+cpu.html
+pip install torch-geometric
+pip install pecanpy
+
+📁 Directory Structure
+/geneDRAGNN-main
+├── interactome_human.sif
+├── edges.csv
+├── embeddings_ataxia.csv
+├── ataxia_embeddings_named_fixed.csv
+├── gene_names_ataxia.csv
+├── gene_features_ataxia.csv
+├── run_gene_score_inference_final_v2.py
+├── split_embeddings_to_inputs.py
+└── model_checkpoints/
+    └── MLP_node_trial99.ckpt
+
+🔄 Data Preparation Steps
+1.Generate edge list for PecanPy:
+awk '$2 == "pp" && NF == 3 {print $1","$3}' interactome_human.sif > edges.csv
+2.Run node2vec embedding:
+pecanpy --input edges.csv --output embeddings_ataxia.csv \
+        --mode SparseOTF --delimiter , --dimensions 128
+3.Map gene names
+ pip install mygene
+
+🧠 Run Inference
+The scores will be saved in the gene_scores file then can be mapped if mapping was not done earlier
