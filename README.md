@@ -51,7 +51,15 @@ Graph neural networks require as input:
 
 ![Flowchart](https://github.com/SFGLab/Team1_Gene_Prioritization_GNN/blob/main/GNN%20for%20GD%20proiritization.drawio%20(4).png?raw=true)
 
-### Pipeline testing 
+
+#### How to use this repo
+
+Why clone it? How to use it? Why and how build upon it?
+
+Draft: to apply the methods we validated as working, to research further rare diseases in a similar fashion. To expand this project into a more comprehensive benchmarking of available methods.
+
+### Pipeline testing
+
 README
 
 geneDRAGNN testing pipeline
@@ -92,12 +100,6 @@ gene_scores.csv with pathogenicity relevance scores.
 ## Results
 
 ## Conclusions
-
-## How to use this repo
-
-Why clone it? How to use it? Why and how build upon it?
-
-Draft: to apply the methods we validated as working, to research further rare diseases in a similar fashion. To expand this project into a more comprehensive benchmarking of available methods.
 
 ## References
 
