@@ -1,10 +1,10 @@
-# Run XGDAG using Docker
+### Run XGDAG using Docker
 
-## Dir contents
+#### Dir contents
 
 Dockerfile_quick_2025-05-14 - a dockerfile that integrates small mods in the XGDAG codebase for a quick deployment - but may stop working with future XGDAG releases.
 
-## Instructions for Dockerfile_quick_2025-05-11
+#### Instructions for Dockerfile_quick_2025-05-11
 
 **1. Download the XGDAG repository and prepare the Dockerfile**
 ```bash
