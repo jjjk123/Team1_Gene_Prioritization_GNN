@@ -20,13 +20,17 @@ git clone https://github.com/GiDeCarlo/XGDAG
 nano Dockerfile
 ```
 
-3. Build and run the Docker image
+3. Build the Docker image
 ```bash
 docker build -t xgdag_test .
+```
+
+4. Run a Docker container
+```bash
 docker run -it xgdag_test
 ```
 
-4. Test if XGDAG works
+5. Test if XGDAG works
 ```bash
 python TrainerScript.py
 ```
@@ -57,13 +61,17 @@ sed -i 's/from SubgraphXshapley/from .SubgraphXshapley/' XGDAG/SubgraphX/Subgrap
 nano Dockerfile
 ```
 
-4. Build and run the Docker image
+4. Build the Docker image
 ```bash
 docker build -t xgdag_test .
+```
+
+5. Run a Docker container
+```bash
 docker run -it xgdag_test
 ```
 
-5. Test if XGDAG works
+6. Test if XGDAG works
 ```bash
 python TrainerScript.py
 ```
