@@ -34,8 +34,8 @@ python TrainerScript.py
 
 ### B - Instructions for Dockerfile
 
-1. Download the XGDAG repository and prepare the Dockerfile
-
+1. Download the XGDAG repository
+   
 ```bash
 mkdir test
 cd test
