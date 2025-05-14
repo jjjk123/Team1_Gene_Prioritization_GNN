@@ -14,9 +14,9 @@
 
 ## Aim
 
-We compare state-of-the-art Network Propagation with Graph Neural Networks (GNNs), using protein-protein interaction data and known disease genes to construct the graph. We aim to assess and compare how well these methods can prioritize candidate genes for further biological validation. As an example use case, we identify new genes potentially involved in Hereditary Ataxia. 
+The aim of the project is to compare the performance of Graph Neural Networks (GNNs) with network propagation methods in disease-gene prioritization. We aim to assess and compare how well these methods can prioritize candidate genes for further biological validation. As for the use case, we use genes involved in hereditary ataxia.
 
-## Why?
+## Background
 
 Medical genetics aims at diagnosing patients by finding genetic variants explaining their disease. While approximately half of the patients with rare genetic disease receive a genetic diagnosis, the other half remains undiagnosed, and one of the reasons is genetic variants in genes currently unknown to be disease-associated. Since experimental studies are usually quite expensive and time-consuming, in silico disease-gene prioritization is very useful in the discovery of new disease-genes. By ranking genes, the methods provide sets of the most promising new candidate genes relevant for a disease.
 
@@ -36,14 +36,15 @@ As an illustrative case we used hereditary ataxia - a rare, genetically complex 
 - Mikolaj Kocikowski
 - Paulina Domek
 
+
 ## Methods
 
-Main tools to base our work on: 
+We used the following software packages: 
 - https://github.com/geneDRAGNN/geneDRAGNN
 - https://github.com/GiDeCarlo/XGDAG
 - https://github.com/anthbapt/multixrank
 
-Graph neural networks require as input:
+Input:
 - biological network (protein-protein interaction constructed with BioGRID and Reactome)
 - a list of known disease genes for ataxia from https://www.genomicsengland.co.uk/
 - node features: we used gene expression in cerebellum from the GTEx database (https://www.gtexportal.org) and case/control variants statistics from the AstraZeneca PheWAS Portal (https://azphewas.com/)
@@ -53,9 +54,11 @@ Graph neural networks require as input:
 ![Flowchart](https://github.com/SFGLab/Team1_Gene_Prioritization_GNN/blob/b790a73be0bdb8c3d208f48653adf3c490986681/GNN%20for%20GD%20proiritization.drawio%20(7).png)
 
 
-### How to use this repo
+### How to use this repository?
 
-Why clone it? How to use it? Why and how build upon it?
+Why clone it?
+
+How to use it? Why and how build upon it?
 
 Draft: to apply the methods we validated as working, to research further rare diseases in a similar fashion. To expand this project into a more comprehensive benchmarking of available methods.
 
