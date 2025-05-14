@@ -99,6 +99,12 @@ gene_scores.csv with pathogenicity relevance scores.
 
 
 ## Results
+
+### XGDAG
+
+We were not able to utilize the XGDAG GNN due to challenges in reproducing a functional environment for this tool, across systems from a Windows laptop to a Linux HPC. The provided Conda setups were not functional and we could not reesolve all dependencies. We requested the authores provide a containerized, platform-independent solution, with no response yet.
+
+### geneDRAGNN
 The list of the top 20 prioritized genes for Ataxia using the geneDRAGNN tool that was trained on LUAD 
 
 ![image](https://github.com/user-attachments/assets/fc1c939c-bbe4-4e32-be99-c4d8fd3ec6c5)
