@@ -53,7 +53,7 @@ Graph neural networks require as input:
 ![Flowchart](https://github.com/SFGLab/Team1_Gene_Prioritization_GNN/blob/main/GNN%20for%20GD%20proiritization.drawio%20(4).png?raw=true)
 
 
-#### How to use this repo
+### How to use this repo
 
 Why clone it? How to use it? Why and how build upon it?
 
