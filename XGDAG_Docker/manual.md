@@ -36,6 +36,8 @@ python TrainerScript.py
 ```
 
 
+
+
 ### B - Instructions for Dockerfile
 
 1. Download the XGDAG repository
