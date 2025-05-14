@@ -1,0 +1,19 @@
+alpha: 0.85
+layers:
+  - name: PPI
+    file: PPI.tsv
+    type: homogenous
+    entity1_type: gene
+    entity2_type: gene
+    delimiter: "\t"
+    header: false
+entities:
+  - type: gene
+    file: gene.list
+    delimiter: "\n"
+    header: false
+seeds:
+  - type: gene
+    file: gene.txt
+    weight: 1.0
+output_dir: output/
