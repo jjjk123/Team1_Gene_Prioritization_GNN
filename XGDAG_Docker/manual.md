@@ -17,11 +17,11 @@ git clone https://github.com/GiDeCarlo/XGDAG
 
 2. Modify the XGDAG codebase before it is copied into the container
 
-# Add missing __init__.py file
+Add missing __init__.py file
 ```bash
 touch XGDAG/SubgraphX/__init__.py
 
-# Fix relative import in SubgraphX.py
+Fix relative import in SubgraphX.py
 sed -i 's/from SubgraphXshapley/from .SubgraphXshapley/' XGDAG/SubgraphX/SubgraphX.py
 
 3. Create a docker file - paste the content of provided 'Dockerfile'
