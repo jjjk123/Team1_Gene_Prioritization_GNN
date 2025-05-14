@@ -111,6 +111,15 @@ The list of the top 20 prioritized genes for Ataxia using the geneDRAGNN tool th
 
 ## Conclusions
 
+
+## Future directions
+1. Retrain XGDAG and geneDRAGNN using disease-specific input data
+2. GNN vs network propagation: leave-one-out cross-validation, compare the top 20 highest scoring genes (the most promising candidates for ataxia)
+3. Use XAI strategies to compute explanation subgraphs
+4. Construct multi-layer networks for GNN imputation
+5. Improve the usability of GNNs for non-CS researchers
+
+
 ## References
 
 1) Altabaa, A., Huang, D., Byles-Ho, C., Khatib, H., Sosa, F., & Hu, T. (2022). GeneDRAGNN: Gene disease prioritization using graph neural networks. 2022 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB), 1–10. https://doi.org/10.1109/cibcb55180.2022.9863043
