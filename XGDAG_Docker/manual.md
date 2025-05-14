@@ -1,11 +1,11 @@
 ### Run XGDAG using Docker
 
-#### Choose one of the paths
+### Choose one of the paths
 
 - Dockerfile - requires manual changes to the XGDAG code as accessed on 2025-05-14, detailed in the manual below.
 - Dockerfile_quick_2025-05-14 - has the mods integrated for a quick deployment - but may stop working with future XGDAG releases.
 
-#### Instructions for Dockerfile
+### Instructions for Dockerfile
 
 1. Download the XGDAG repository and prepare the Dockerfile
 
@@ -21,9 +21,9 @@ Add missing __init__.py file
 ```bash
 touch XGDAG/SubgraphX/__init__.py
 
-Fix relative import in SubgraphX.py
+# Fix relative import in SubgraphX.py
 sed -i 's/from SubgraphXshapley/from .SubgraphXshapley/' XGDAG/SubgraphX/SubgraphX.py
-
+```
 3. Create a docker file - paste the content of provided 'Dockerfile'
 ```bash
 nano Dockerfile
@@ -42,7 +42,7 @@ python TrainerScript.py
 
 
 
-#### Instructions for Dockerfile_quick_2025-05-11
+### Instructions for Dockerfile_quick_2025-05-11
 
 1. Download the XGDAG repository and prepare the Dockerfile
 ```bash
