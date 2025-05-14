@@ -3,7 +3,7 @@
 #### Dir contents
 
 - Dockerfile - a dockerfile that requires manual changes to the XGDAG code as accessed on 2025-05-14, detailed in the manual below.
-- Dockerfile_quick_2025-05-14 - a dockerfile that integrates small mods in the XGDAG codebase for a quick deployment - but may stop working with future XGDAG releases.
+- Dockerfile_quick_2025-05-14 - a dockerfile that has the mods integrated for a quick deployment - but may stop working with future XGDAG releases.
 
 #### Instructions for Dockerfile
 
