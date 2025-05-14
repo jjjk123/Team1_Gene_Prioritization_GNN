@@ -1,0 +1,454 @@
+{
+	"data": [
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000248527.1",
+			"geneSymbol": "MTATP6P1",
+			"median": 4787.2,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000166165.14",
+			"geneSymbol": "CKB",
+			"median": 2025.22,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000111640.15",
+			"geneSymbol": "GAPDH",
+			"median": 1617.43,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000120885.22",
+			"geneSymbol": "CLU",
+			"median": 1201.74,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000111674.9",
+			"geneSymbol": "ENO2",
+			"median": 1191.99,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000089220.5",
+			"geneSymbol": "PEBP1",
+			"median": 1183.68,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000087086.15",
+			"geneSymbol": "FTL",
+			"median": 1138.78,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000142534.7",
+			"geneSymbol": "RPS11",
+			"median": 1128.48,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000109107.14",
+			"geneSymbol": "ALDOC",
+			"median": 1076.83,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000167658.16",
+			"geneSymbol": "EEF2",
+			"median": 1010.63,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000104833.12",
+			"geneSymbol": "TUBB4A",
+			"median": 989.058,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000143947.15",
+			"geneSymbol": "RPS27A",
+			"median": 977.722,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000253230.10",
+			"geneSymbol": "MIR124-1HG",
+			"median": 970.137,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000112306.8",
+			"geneSymbol": "RPS12",
+			"median": 950.358,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000198668.14",
+			"geneSymbol": "CALM1",
+			"median": 948.682,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000231500.7",
+			"geneSymbol": "RPS18",
+			"median": 945.532,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000100316.16",
+			"geneSymbol": "RPL3",
+			"median": 930.664,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000101210.13",
+			"geneSymbol": "EEF1A2",
+			"median": 907.984,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000197746.15",
+			"geneSymbol": "PSAP",
+			"median": 891.835,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000225630.1",
+			"geneSymbol": "MTND2P28",
+			"median": 873.654,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000104435.14",
+			"geneSymbol": "STMN2",
+			"median": 825.455,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000177954.14",
+			"geneSymbol": "RPS27",
+			"median": 824.074,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000107317.13",
+			"geneSymbol": "PTGDS",
+			"median": 805.076,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000075624.17",
+			"geneSymbol": "ACTB",
+			"median": 803.55,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000096384.20",
+			"geneSymbol": "HSP90AB1",
+			"median": 793.271,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000104964.15",
+			"geneSymbol": "TLE5",
+			"median": 790.986,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000142541.18",
+			"geneSymbol": "RPL13A",
+			"median": 780.249,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000130203.10",
+			"geneSymbol": "APOE",
+			"median": 778.282,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000104852.15",
+			"geneSymbol": "SNRNP70",
+			"median": 777.208,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000110955.9",
+			"geneSymbol": "ATP5F1B",
+			"median": 751.17,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000109971.14",
+			"geneSymbol": "HSPA8",
+			"median": 743.549,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000122026.11",
+			"geneSymbol": "RPL21",
+			"median": 740.24,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000102924.12",
+			"geneSymbol": "CBLN1",
+			"median": 722.302,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000168490.14",
+			"geneSymbol": "PHYHIP",
+			"median": 721.892,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000139899.11",
+			"geneSymbol": "CBLN3",
+			"median": 719.339,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000156976.17",
+			"geneSymbol": "EIF4A2",
+			"median": 707.763,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000160014.17",
+			"geneSymbol": "CALM3",
+			"median": 686.766,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000105696.9",
+			"geneSymbol": "TMEM59L",
+			"median": 685.996,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000265681.8",
+			"geneSymbol": "RPL17",
+			"median": 681.847,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000254772.10",
+			"geneSymbol": "EEF1G",
+			"median": 674.942,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000114391.13",
+			"geneSymbol": "RPL24",
+			"median": 673.043,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000159335.18",
+			"geneSymbol": "PTMS",
+			"median": 664.478,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000074317.11",
+			"geneSymbol": "SNCB",
+			"median": 660.846,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000109472.14",
+			"geneSymbol": "CPE",
+			"median": 656.4,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000213760.11",
+			"geneSymbol": "ATP6V1G2",
+			"median": 655.127,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000131095.14",
+			"geneSymbol": "GFAP",
+			"median": 649.786,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000185883.12",
+			"geneSymbol": "ATP6V0C",
+			"median": 643.299,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000087250.9",
+			"geneSymbol": "MT3",
+			"median": 632.748,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000063180.9",
+			"geneSymbol": "CA11",
+			"median": 632.735,
+			"unit": "TPM"
+		},
+		{
+			"tissueSiteDetailId": "Brain_Cerebellum",
+			"ontologyId": "UBERON:0002037",
+			"datasetId": "gtex_v10",
+			"gencodeId": "ENSG00000100362.13",
+			"geneSymbol": "PVALB",
+			"median": 627.496,
+			"unit": "TPM"
+		}
+	]
+}
