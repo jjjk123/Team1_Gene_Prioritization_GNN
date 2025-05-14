@@ -42,7 +42,7 @@ Case/control variants statistics: https://azphewas.com/phenotypeView/6319c068-fd
 
 ![Flowchart](https://github.com/SFGLab/Team1_Gene_Prioritization_GNN/blob/main/GNN%20for%20GD%20proiritization.drawio%20(4).png?raw=true)
 
-###Pipeline testing 
+### Pipeline testing 
 README
 
 
