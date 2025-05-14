@@ -15,7 +15,7 @@ cd test
 git clone https://github.com/GiDeCarlo/XGDAG
 nano Dockerfile
 ```
-Paste the provided Dockerfile content and save the file.
+Paste the contents of the 'Dockerfile_quick_2025-05-14' file provided here into your 'Dockerfile'.
 
 2. Build and run the Docker image
 ```bash
