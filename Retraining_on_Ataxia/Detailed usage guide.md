@@ -48,9 +48,6 @@ with torch.no_grad():
 You can modify predict_and_evaluate.py to load your own gene list and get predictions, using the model and embeddings provided.
 
 📁 Included Files
-File	Purpose
-gnn_model_ataxia.pth	Trained GNN model weights
-embedding.pt	Node2Vec embeddings (107-D)
-edges.csv / nodes.csv	Network topology for the graph
-train_gnn_model.py	Training script (SGConv model)
-predict_and_evaluate.py	Runs predictions and evaluation
+
+![image](https://github.com/user-attachments/assets/71f8fa5c-5e6b-4ff3-b3f9-d128e0c76ea0)
+
