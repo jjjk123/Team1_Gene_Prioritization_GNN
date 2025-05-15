@@ -121,6 +121,7 @@ The list of the top 20 prioritized genes for Ataxia using the geneDRAGNN tool th
 3. Use XAI strategies to compute explanation subgraphs
 4. Construct multi-layer networks for GNN imputation
 5. Improve the usability of GNNs for non-CS researchers
+6. Perform external validation of candidate genes using the internal database of 30K+ of exomes and genomes of rare disease patients at [IMGAG Tübingen](https://www.medizin.uni-tuebingen.de/de/das-klinikum/einrichtungen/institute/medizinische-genetik-und-angewandte-genomik).
 
 
 ## References
