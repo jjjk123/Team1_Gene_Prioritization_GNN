@@ -56,11 +56,7 @@ Input:
 
 ### How to use this repository?
 
-Why clone it?
-
-How to use it? Why and how build upon it?
-
-Draft: to apply the methods we validated as working, to research further rare diseases in a similar fashion. To expand this project into a more comprehensive benchmarking of available methods.
+Use it to expand the benchmarking of network-based methods for identifying disease-associated genes, or to obtain a functional XGDAG environment and geneDRAGNN setup.  
 
 ### Pipeline testing
 
@@ -105,7 +101,7 @@ gene_scores.csv with pathogenicity relevance scores.
 
 ### XGDAG
 
-We were not able to utilize the XGDAG GNN due to challenges in reproducing a functional environment for this tool, across systems from a Windows laptop to a Linux HPC. The provided Conda setups were not functional and we could not reesolve all dependencies. We requested the authores provide a containerized, platform-independent solution, however, due to the time limitations of the hackathon created the Docker image ourselves and were able to run the tool. Sadly, spending the precious time on tool set up did not leave us an opportunity to test the tool and tune it to our needs.
+We were not able to utilize the XGDAG GNN due to challenges in reproducing a functional environment for this tool, across systems from a Windows laptop to a Linux HPC. The provided Conda setups were not functional and we could not resolve all dependencies. We requested the authores provide a containerized, platform-independent solution, however, due to the time limitations of the hackathon, we created a compatible Docker image from scratch. This way we were able to run the tool on the included, default data. This allowed us to realize several input files for XGDAG must be prepared with another tool, with limited documentation of the process. The tool set up unfortunately left us with not enough time to process and analyze our own data.
 
 ### geneDRAGNN
 The list of the top 20 prioritized genes for Ataxia using the geneDRAGNN tool that was trained on LUAD 
