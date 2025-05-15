@@ -117,6 +117,8 @@ The list of the Top 20 genes for Ataxia using the retrained geneDRAGNN tool
 
 All scripts to run MultiXrank for ataxia genes are in [multixrank/](multixrank/)
 
+### Method Comparison
+
 Comparison of the top 20 genes in all three methods used
 
 ![image](https://github.com/user-attachments/assets/fdefd254-005b-4130-b594-a2b170a4d543)
