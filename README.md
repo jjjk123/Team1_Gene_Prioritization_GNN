@@ -112,6 +112,11 @@ The list of the top 20 prioritized genes for Ataxia using the geneDRAGNN tool th
 
 ![image](https://github.com/user-attachments/assets/fc1c939c-bbe4-4e32-be99-c4d8fd3ec6c5)
 
+### MultiXrank (Random Walk with Restart)
+
+All scripts to run MultiXrank for ataxia genes are in [multixrank/](multixrank/)
+
+
 ## Conclusions
 
 
