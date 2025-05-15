@@ -58,7 +58,7 @@ Input:
 
 Use it to expand the benchmarking of network-based methods for identifying disease-associated genes, or to obtain a functional XGDAG environment and geneDRAGNN setup.  
 
-### Pipeline testing
+#### geneDRAGNN Pipeline testing
 
 README
 
