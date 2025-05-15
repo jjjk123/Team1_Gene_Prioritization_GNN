@@ -1,0 +1,10 @@
+seed: seeds.txt
+r: 0.7
+# self_loops: Are self-loops allowed? 1 yes, 0 not
+self_loops: 1
+# eta: Restart probability for each multiplex. Must sum up to one.
+eta: [1]
+multiplex:
+    1:
+        layers:
+            - multiplex/1/interactome_human.tsv
