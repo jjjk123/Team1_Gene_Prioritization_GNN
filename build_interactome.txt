@@ -1,0 +1,22 @@
+
+git clone https://github.com/jjjk123/GBA-centrality.git
+
+wget https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.dat.gz
+
+wget https://downloads.thebiogrid.org/Download/BioGRID/Latest-Release/BIOGRID-ORGANISM-LATEST.mitab.zip
+unzip -p BIOGRID-ORGANISM-LATEST.mitab.zip BIOGRID-ORGANISM-Homo_sapiens-4.4.245.mitab.txt > BIOGRID-ORGANISM-Homo_sapiens-4.4.245.mitab.txt
+
+wget https://reactome.org/download/current/interactors/reactome.homo_sapiens.interactions.psi-mitab.txt
+
+
+gunzip -c uniprot_sprot.dat.gz | python GBA-centrality/Interactome/uniprot_parser.py > uniprot_parsed.tsv
+
+python GBA-centrality/Interactome/interaction_parser.py --interaction_file BIOGRID-ORGANISM-Homo_sapiens*.mitab.txt --uniprot_file uniprot_parsed.tsv > interactions_Biogrid.tsv
+
+python GBA-centrality/Interactome/interaction_parser.py --interaction_file reactome.homo_sapiens.interactions.psi-mitab.txt --uniprot_file uniprot_parsed.tsv > interactions_Reactome.tsv
+
+python GBA-centrality/Interactome/build_interactome.py \
+  --interactions_parsed_files interactions_Biogrid.tsv interactions_Reactome.tsv \
+  --uniprot_file uniprot_parsed.tsv > interactome_human.sif
+
+  
