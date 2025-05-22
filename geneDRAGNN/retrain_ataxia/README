@@ -5,7 +5,6 @@ This repository applies the geneDRAGNN graph neural network pipeline to predict 
 ## 🚀 How to Run
 
 ### Train the model
-```bash
 python train_gnn_model.py
 
 ### OR load Trained model

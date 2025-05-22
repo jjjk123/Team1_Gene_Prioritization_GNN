@@ -38,10 +38,10 @@ In this study, we used the following software packages:
 - https://github.com/GiDeCarlo/XGDAG
 - https://github.com/anthbapt/multixrank
 
-For each method we used the following input:
-- a biological network (protein-protein interaction constructed with BioGRID and Reactome)
+We used the following input data:
+- a biological network (protein-protein interactions from BioGRID and Reactome)
 - a list of known disease genes for ataxia (from https://www.genomicsengland.co.uk/)
-- as node features, we used gene expression in cerebellum (from the GTEx database; https://www.gtexportal.org) and case/control variants statistics (from the AstraZeneca PheWAS Portal; https://azphewas.com/)
+- as node features, we used gene expression (from the GTEx database, https://www.gtexportal.org; "cerebellum") and case/control variants statistics (from the AstraZeneca PheWAS Portal, https://azphewas.com/)
 
 
 ### Workflow
@@ -51,20 +51,20 @@ For each method we used the following input:
 
 ### How to use this repository?
 
-Everyone is welcome to clone this repository and build upon the project, for example, to expand the benchmarking of network-based methods for identifying disease-associated genes, or to obtain a functional XGDAG environment and geneDRAGNN setup.  
+Everyone is welcome to clone this repository and build upon the project, for example, to expand the benchmarking of network-based methods for identifying disease-associated genes, or to obtain a functional XGDAG and geneDRAGNN setup.  
 
 ### Software:
 
 #### 1. geneDRAGNN
 
-This project demonstrates how to use the pretrained model from the geneDRAGNN repository to generate disease relevance scores for genes using a Multi-Layer Perceptron (MLP) model trained on lung adenocarcinoma (LUAD) data.
+We demonstrate below how to use the pretrained model from the geneDRAGNN repository to generate disease-gene scores using a Multi-Layer Perceptron (MLP) model trained on lung adenocarcinoma (LUAD) data.
 
 🔍 What This Does
-- Loads a pretrained MLP model: MLP_node_trial99.ckpt
-- Accepts node features of shape (N, 107)
-- Outputs predicted gene scores in gene_scores.csv
+- loads a pretrained MLP model: MLP_node_trial99.ckpt
+- accepts node features of shape (N, 107)
+- outputs predicted gene scores in gene_scores.csv
 
-🧪 Setup
+🚀 How to Run
 
 1. Clone the Repo
 git clone https://github.com/hanikhatib/geneDRAGNN.git
@@ -90,9 +90,26 @@ gene_scores.csv with pathogenicity relevance scores
 - Using this model for other diseases will require retraining.
 
 
+##### geneDRAGNN – Ataxia Variant Prediction
+
+This repository applies the geneDRAGNN graph neural network to predict gene associations with Hereditary Ataxia.
+
+🚀 How to Run
+
+Our scripts to retrain geneDRAGNN are in [geneDRAGNN/retrain_ataxia/]([geneDRAGNN/retrain_ataxia/]).
+
+🧪 Model
+
+GNN architecture: SGConv
+
+Input features: 107D Node2Vec embeddings
+
+Output: Binary classification (pathogenic / non-pathogenic)
+
+
 #### 2. XGDAG
 
-TBD
+We were not able to utilize the XGDAG GNN due to challenges in reproducing a functional environment for this software. The provided Conda environments were not functional and we could not resolve all dependencies. We requested the authores provide a containerized, platform-independent solution, however, due to the time limitations of the hackathon, we created a compatible Docker image from scratch. This way we were able to run the tool on the included, default data. This allowed us to realize several input files for XGDAG must be prepared with another tool, with limited documentation of the process. The tool set up unfortunately left us with not enough time to process and analyze our own data.
 
 
 #### 3. MultiXrank
@@ -100,8 +117,12 @@ TBD
 As a network propagation method, we used Random Walk with Restart, as implemented in MultiXrank (https://github.com/anthbapt/multixrank).
 
 🔍 What This Does
-- Loads a biological network and known disease genes (seeds)
-- Outputs predicted gene scores
+- Loads a biological network (interactome_human.tsv) and known disease genes (seeds.txt)
+- Outputs gene scores (multixrank_output_ataxia.tsv)
+
+🚀 How to Run
+
+Our scripts to run MultiXrank for ataxia are in [multixrank/](multixrank/).
 
 🧪 Setup
 
@@ -113,39 +134,29 @@ cd multixrank
 pip install multixrank
 
 4. Prepare Input Files
-Place interactome_human.tsv (format: ENSG1\tENSG2) and ataxia_genes.txt (ENSG per row) in the ataxia folder.
+Place interactome_human.tsv (format: ENSG1\tENSG2) and seeds.txt (ENSG per row) in the ataxia/ folder.
 
 5. Run MultiXrank as described in https://github.com/anthbapt/multixrank
 
 ✅ Output:
-multixrank_output_ataxia.tsv with scores
+multixrank_output_ataxia.tsv with gene scores
 
 ⚠️ Notes
-- We used the default MultiXrank parameters.
+- We used the default MultiXrank parameters (r = 0.7, self-loops = 1).
 
 
 ## Results
 
 ### geneDRAGNN
 
-The list of the top 20 prioritized genes for ataxia using the geneDRAGNN tool that was trained on LUAD:
+The list of the top 20 prioritized genes for ataxia using geneDRAGNN that was trained on LUAD (default model):
 
 ![image](https://github.com/user-attachments/assets/fc1c939c-bbe4-4e32-be99-c4d8fd3ec6c5)
 
 
-The list of the top 20 genes for ataxia using the retrained geneDRAGNN tool:
+The list of the top 20 genes for ataxia using the retrained geneDRAGNN:
 
 ![image](https://github.com/user-attachments/assets/911e5d61-987d-4831-80b9-a69718437a43)
-
-
-### XGDAG
-
-We were not able to utilize the XGDAG GNN due to challenges in reproducing a functional environment for this tool, across systems from a Windows laptop to a Linux HPC. The provided Conda setups were not functional and we could not resolve all dependencies. We requested the authores provide a containerized, platform-independent solution, however, due to the time limitations of the hackathon, we created a compatible Docker image from scratch. This way we were able to run the tool on the included, default data. This allowed us to realize several input files for XGDAG must be prepared with another tool, with limited documentation of the process. The tool set up unfortunately left us with not enough time to process and analyze our own data.
-
-
-### MultiXrank (Random Walk with Restart)
-
-All scripts to run MultiXrank for ataxia genes are in [multixrank/](multixrank/)
 
 
 ### Method Comparison
@@ -157,16 +168,17 @@ Comparison of the top 20 genes from geneDRAGNN, retrained geneDRAGNN and MultiXr
 
 ## Conclusions
 
-During the hackathon, we conducted the project entitled "GRAIL: Gene Ranking for Ataxia using Interactome-based Learning" to compare the performance of two promising strategies for disease gene prioritization: graph neural networks and network propagation methods. Despite challenges with usability and limited time, we ran geneDRAGNN (a GNN-based method) and MultiXrank (a network propagation method). We used an example dataset consisting of a protein-protein interaction network and  known gene for hereditary ataxia. Our results show that both methods produce distinct sets of top-ranked genes, which suggests that they might provide complementary results. The retraining of geneDRAGNN using disease-specific features might improve its performance. This project demonstrates the promise of GNNs in disease-gene prioritization. To conclude, a combined strategy that leverages the interpretability and scalability of propagation with the expressive power of GNNs may yield the best results for real-world rare disease research. 
+During the hackathon, we conducted the project entitled "GRAIL: Gene Ranking for Ataxia using Interactome-based Learning" to compare the performance of two promising strategies for disease gene prioritization: graph neural networks and network propagation methods. Despite challenges with usability and limited time, we ran geneDRAGNN (a graph neural network) and MultiXrank (a network propagation method). We used an example dataset consisting of a protein-protein interaction network and known gene for hereditary ataxia. Our results show that both methods produce distinct sets of top-ranked genes, which suggests that they might provide complementary results. The retraining of geneDRAGNN using disease-specific features might improve its performance. To conclude, a combined strategy that leverages the interpretability and scalability of network propagation with the expressive power of GNNs may yield the best results for the identification of new disease-associated genes. 
 
 
 ## Future directions
-1. Retrain XGDAG and geneDRAGNN using disease-specific input data
-2. GNN vs network propagation: leave-one-out cross-validation, compare the top 20 highest scoring genes (the most promising candidates for ataxia)
-3. Use XAI strategies to compute explanation subgraphs
-4. Construct multi-layer networks for GNN imputation
-5. Improve the usability of GNNs for non-CS researchers
-6. Perform external validation of candidate genes using the internal database of 30K+ of exomes and genomes of rare disease patients at [IMGAG Tübingen](https://www.medizin.uni-tuebingen.de/de/das-klinikum/einrichtungen/institute/medizinische-genetik-und-angewandte-genomik).
+
+1. Retrain XGDAG and geneDRAGNN using disease-specific input data.
+2. Benchmark XGDAG, geneDRAGNN and MultiXrank: leave-one-out cross-validation, compare the annotations of the top 20 highest scoring genes
+3. Use explainable AI strategies to compute explanation subgraphs and interpret the scoring
+4. Compare the performance of GNN vs network propagation on multi-layer networks (e.g., protein-protein interactions, gene co-expression, gene regulatory networks)
+5. Improve the usability of GNNs researchers
+6. Perform a validation of candidate genes using the internal database of 30K+ of exomes and genomes of rare disease patients at [IMGAG Tübingen](https://www.medizin.uni-tuebingen.de/de/das-klinikum/einrichtungen/institute/medizinische-genetik-und-angewandte-genomik).
 
 
 ## References
